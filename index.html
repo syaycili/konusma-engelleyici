@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Konuşma Engelleyici</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  </script>
+  <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+</head>
+
+<body>
+  <div id="overlay" class="click">
+    <p><b>Merhaba!</b><br /><br />Uygulamanın çalışması için ses izinlerini vermeniz gerekmektedir.<br />Başlamak için tıklayın!</p>
+  </div>
+  <div class="panel">
+    <p><b>Konuşma Engelleyicir</b></p><br />
+    <p>1. Kulaklıklarınızı <b>takın.</b></p>
+    <p>2. Tarayıcının ses izinlerine erişmesine <b>izin verin.</b></p>
+    <p>3. Sesi <b>yeterli seviyeye</b> getirin!</p>
+    <p>4. <b>Normal konuşmaya çalışın :)</b></p>
+    <div class="controls">
+      <p><b>Delay</b> (<span id="delayValue">150</span>ms) <input type="range" min="0" max="1000" step="1" id="delayRange" value="150"></p>
+      <p><b>Gain</b> (x<span id="gainValue">1</span>) <input type="range" min="1" max="10" step="0.1" id="gainRange" value="1"></p>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
